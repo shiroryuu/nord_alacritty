@@ -51,7 +51,9 @@
 
 ### Installation
 
-Replace the current color definitions in your [`alacritty.yml`][alacritty-gh-config] configuration file with the content from the [`nord.yaml`][nord-yaml] file.
+To install the Nord theme, you have two options:
+1. Replace colors in your `alacritty.toml`:  Replace the existing color definitions with contents from the [`nord.toml`][nord-toml] file. (See Alacritty's website for TOML configuration help: [alacritty's website][alacritty-tml-config])
+2. Import as a separate file: Create a `nord.toml` file and add the following line to your main alacritty.toml configuration:  `import = ["~/.config/alacritty/nord.toml"]`
 
 ### Activation
 
@@ -92,4 +94,5 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 </p>
 
 [alacritty-gh-config]: https://github.com/alacritty/alacritty#configuration
-[nord-yaml]: https://github.com/nordtheme/alacritty/blob/main/src/nord.yaml
+[alacritty-tml-config]: https://alacritty.org/config-alacritty.html
+[nord-toml]: https://github.com/nordtheme/alacritty/blob/main/src/nord.toml
